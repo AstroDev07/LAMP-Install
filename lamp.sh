@@ -8,7 +8,15 @@ then
 	if [ $userin = 'Y' ] || [ $userin = 'y' ];
 	then
 		echo 'Se instalara la Pila de LAMP\n\n\n'
-		apt install apache2 apache2-bin php libapache2-mod-php mysql-server mysql-client
+		apt install apache2 apache2-bin php libapache2-mod-php mysql-server mysql-client php-mysql
+		echo 'Deseas instalar tambien phpMyAdmin?\n Si decides instalarlo, deberas configurar tu contraeña[y/n]'
+		read userin2
+		if [ $userin2 = 'Y' ] || [ $userin2 = 'y' ] ; then
+			apt install phpmyadmin
+		else
+			echo 'No se instalara phpmyadmin'
+		fi
+		echo "\n\nHemos terminado todo"
 	else
 		echo 'No se instalara nada'
 	fi
