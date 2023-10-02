@@ -1,4 +1,4 @@
 # LAMP Install
-LAMP install es un script pequeño para instalar la pila Linux(No se instala obviamente)+Apache+MySQL+PHP
+LAMP install es un script pequeño para instalar la pila de desarrollo Linux(No se instala obviamente)+Apache+MySQL+PHP
 
-**Solo instala los Paquetes basicos y no incluye librerias de ningun tipo.**
+**Solo instala los Paquetes básicos y no incluye librerías de ningún tipo.**
